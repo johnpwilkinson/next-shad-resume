@@ -1,8 +1,6 @@
 "use client";
 
 import { Moon, Palette, Sun } from "lucide-react";
-import { useTheme } from "next-themes";
-import themes from "@/lib/themes";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -11,7 +9,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useEffect, useState } from "react";
-import { Switch } from "./ui/switch";
 
 export function ModeToggle({ setTheme }) {
   const [color, setColor] = useState("zinc");
@@ -26,9 +23,6 @@ export function ModeToggle({ setTheme }) {
   const colors = [
     "zinc",
     "slate",
-    "stone",
-    "gray",
-    "neutral",
     "violet",
     "blue",
     "green",
@@ -41,14 +35,18 @@ export function ModeToggle({ setTheme }) {
     <div className="flex gap-4 justify-center items-center">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="outline" size="icon">
-            <Palette />
+          <Button variant="outline" size="icon" className=" ">
+            <Palette className=" hover:text-primary" />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
-          {colors.map((color) => (
-            <DropdownMenuItem key={color} onClick={() => setColor(color)}>
-              {color}
+          {colors.map((theme) => (
+            <DropdownMenuItem
+              className={`${theme === color ? "bg-secondary" : ""}`}
+              key={color}
+              onClick={() => setColor(theme)}
+            >
+              {theme}
             </DropdownMenuItem>
           ))}
         </DropdownMenuContent>

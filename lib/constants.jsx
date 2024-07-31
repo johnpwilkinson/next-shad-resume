@@ -1,5 +1,4 @@
 "use client";
-import { SquareArrowUpRightIcon, Copy, MapPin } from "lucide-react";
 import {
   SiJavascript,
   SiReact,
@@ -21,7 +20,6 @@ import {
   SiOpenzeppelin,
   SiEthers,
   SiReacthookform,
-  SiReactrouter,
   SiGit,
   SiJest,
   SiWeb3dotjs,
@@ -31,24 +29,9 @@ import {
   SiGithub,
 } from "@icons-pack/react-simple-icons";
 import ExperienceCard from "@/components/ExperienceCard";
-import {
-  Cross2Icon,
-  Crosshair2Icon,
-  GlobeIcon,
-  LinkedInLogoIcon,
-  SewingPinFilledIcon,
-} from "@radix-ui/react-icons";
+import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import ContactPopover from "@/components/ContactPopover";
-const handleCopy = (text) => {
-  navigator.clipboard
-    .writeText(text)
-    .then(() => {
-      alert("Copied to clipboard");
-    })
-    .catch((err) => {
-      console.error("Failed to copy: ", err);
-    });
-};
+
 const experience = [
   {
     organization: "FutureWonder",

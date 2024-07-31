@@ -1,5 +1,4 @@
 "use client";
-import ContactSquare from "@/components/ContactSquare";
 import CvCard from "@/components/CvCard";
 import { cvData } from "@/lib/constants";
 export default function Home() {

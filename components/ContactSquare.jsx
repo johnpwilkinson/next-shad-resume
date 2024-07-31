@@ -7,7 +7,7 @@ import {
   CardDescription,
   CardTitle,
 } from "./ui/card";
-import { Crosshair2Icon, GlobeIcon } from "@radix-ui/react-icons";
+
 export default function ContactSquare() {
   return (
     <Card>
@@ -28,16 +28,6 @@ export default function ContactSquare() {
             ))}
           </div>
         </div>
-        {/* <div className="flex lg:flex-col mt-2 space-y-2">
-          <div className="flex gap-4  lg:justify-between lg:items-center">
-            <Crosshair2Icon className="w-8 h-8" />
-            <span>46032 IN USA</span>
-          </div>
-          <div className="flex gap-4  lg:justify-between lg:items-center">
-            <GlobeIcon className="w-8 h-8" />
-            <span>Remote EST</span>
-          </div>
-        </div> */}
       </CardContent>
     </Card>
   );

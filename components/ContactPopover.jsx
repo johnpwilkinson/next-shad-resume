@@ -4,8 +4,6 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { CopyIcon, GlobeIcon } from "@radix-ui/react-icons";
-import { SquareArrowUpRightIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { contactInfo } from "@/lib/constants";
 
