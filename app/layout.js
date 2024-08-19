@@ -17,6 +17,9 @@ export default function RootLayout({ children }) {
   const [theme, setTheme] = useState("theme-zinc");
   return (
     <html lang="en">
+      <head>
+        <title>John Wilkinson | Full-Stack Developer </title>
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
