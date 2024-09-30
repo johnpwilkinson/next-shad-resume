@@ -34,6 +34,17 @@ import ContactPopover from "@/components/ContactPopover";
 
 const experience = [
   {
+    organization: "Outlier.ai",
+    title: "AI Prompt QA Engineer",
+    time: "2024 - current",
+    description: [
+      "Analyzed client requirements to develop and evaluate AI prompts and responses, ensuring alignment with specified goals.",
+      "Researched factual accuracy of AI-generated claims,providing critical feedback to improve response quality.",
+      "Judged and ranked responses based on criteria such as relevance, clarity, and accuracy, contributing to the refinement of model outputs.",
+      "Documented findings and insights to inform future iterations,enhancing the overall effectiveness of AI training processes.",
+    ],
+  },
+  {
     organization: "FutureWonder",
     title: "Full Stack Developer",
     time: "October 2021 - current",
@@ -73,7 +84,7 @@ const education = [
   },
   {
     organization: "Kenzie Academy",
-    title: "Certification: Full StackSoftware Engineering",
+    title: "Certification: Full Stack Software Engineering",
     time: "2019 - 2020",
   },
   {
@@ -116,7 +127,7 @@ export const cvData = {
     title: "About Me",
     content: (
       <p>
-        Full-stack developer with a background in sales and management, always
+        Full stack developer with a background in sales and management, always
         curious and team-oriented. Proficient in technical skills while
         maintaining strong communication abilities honed from a sales
         background. Research-minded and analytical, I excel in collaborative
